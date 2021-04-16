@@ -4,6 +4,7 @@ function mockHTMLElementOffset() {
   Object.defineProperties(HTMLElement.prototype, {
     offsetParent: {
       get() {
+        console.log(1)
         return this.parentNode || {};
       },
     },
